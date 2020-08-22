@@ -35,6 +35,8 @@ wget -q "https://github.com/OSGeo/gdal/archive/${GDAL_VERSION}.tar.gz" \
     fi
 
     ./configure --prefix=/usr \
+        --with-geos \
+        --with-sqlite3 \
         --without-libtool \
         --with-hide-internal-symbols \
         --with-jpeg12 \
